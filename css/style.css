@@ -1,0 +1,161 @@
+/* Estilize o corpo da página */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+.header {
+    background-color: #3E899A;
+    padding: 2em;
+    text-align: center;
+    color: #fff;
+}
+  
+  /* Estilize o container principal */
+  .container { 
+    margin: 2em;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    align-items: center;
+  }
+
+  .form-imc {
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    margin: 0 0 1.5%;
+    width: 417px;
+    height: 381px;
+  }
+
+  .form-control {
+    width: 20em;
+    margin: 0.5%
+  }
+
+  .form-label {
+    padding: 0;
+    margin: 0;
+  }
+
+  .form {
+    margin: 0 0 2em 2em;
+    padding: 1em;
+  }
+
+  .homem {
+    width: 417px;
+    height: 381px;
+  }
+
+  .btn-imc {
+    margin-top: 1em;
+  }
+
+  #btmulher {
+    background-color: rgb(216, 153, 184);
+    color: #fff;
+  }
+
+  #bthomem {
+    background-color: rgb(149, 191, 233);
+    color: #fff;
+  }
+
+  .calcular {
+    margin: 22% 0 6% 10%;
+  }
+
+  .resultado {
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    width: 417px;
+    height: 381px;
+    text-align: center;
+  }
+
+  .imc-color {
+    color: #fff;
+  }
+
+  .resultado p {
+    margin-top:10px 0 10px 0;
+    padding: 2px;
+  }
+
+  .imc-resultado {
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    width: 417px;
+    height: 381px;
+    margin: 0 0 1.5%;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .classificacao {
+    width: 417px;
+    height: 381px; 
+    padding: 1em;
+  }
+
+  .imc-texto {
+    text-align: justify;
+    letter-spacing: 20%;
+    margin-top: 8%;
+  }
+
+  footer {
+    background-color: #3E899A;
+    width: 1440px;
+    height: 73px;
+    flex-shrink: 0;
+  }
+
+  /* Media query para dispositivos móveis */
+@media (max-width: 767px) {
+  .header {
+    padding: 1em;
+  }
+
+  .container {
+    margin: 1em 0.5em;
+  }
+
+  .form-imc,
+  .resultado,
+  .imc-resultado,
+  .classificacao {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .form-control {
+    width: 90%;
+  }
+
+  .homem {
+    width: 100%;
+  }
+
+  .btn-imc {
+    margin-top: 1em;
+  }
+
+  #btmulher,
+  #bthomem {
+    width: 100%;
+    margin: 2% 0;
+  }
+
+  .calcular {
+    margin: 8% 0 6% 5%;
+  }
+}
