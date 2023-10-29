@@ -1,10 +1,12 @@
 document.getElementById("btmulher").addEventListener("click", function () {
     document.getElementById("header").style.backgroundColor = "rgb(216, 153, 184)";
+    document.getElementById("botao").style.backgroundColor = "rgb(216, 153, 184)";
     document.getElementById("resultado").style.backgroundColor = "rgb(216, 153, 184)";
     document.getElementById("mulher"). src = "img/mulher.png";
   }, false);
   document.getElementById("bthomem").addEventListener("click", function () {
     document.getElementById("header").style.backgroundColor = "rgb(149, 191, 233)";
+    document.getElementById("botao").style.backgroundColor = "rgb(149, 191, 233)";
     document.getElementById("resultado").style.backgroundColor = "rgb(149, 191, 233)";
     document.getElementById("mulher"). src = "img/homem.png";
   }, false);
