@@ -32,7 +32,7 @@ body {
   }
 
   .form-control {
-    width: 20em;
+    width: 80%;
     margin: 0.5%
   }
 
@@ -45,10 +45,9 @@ body {
     margin: 0 0 2em 2em;
     padding: 1em;
   }
-
-  .homem {
-    width: 417px;
-    height: 381px;
+  
+  .img-homem-mulher {
+    width: 200px;
   }
 
   .btn-imc {
@@ -79,7 +78,7 @@ body {
   }
 
   .imc-color {
-    color: #fff;
+    color: red;
   }
 
   .resultado p {
@@ -100,17 +99,12 @@ body {
     
   }
 
-  .classificacao {
-    width: 417px;
-    height: 381px; 
-    padding: 1em;
-  }
-
   .imc-texto {
     text-align: justify;
     letter-spacing: 20%;
     margin-top: 8%;
   }
+
 
   footer {
     background-color: #3E899A;
@@ -119,44 +113,57 @@ body {
     flex-shrink: 0;
   }
 
-  /* Media query para dispositivos móveis */
-@media (max-width: 767px) {
+
+/* Media query para tablets e telas menores */
+@media (min-width: 150px) and (max-width: 1280px) {
   .header {
     padding: 1em;
-  }
+}
 
-  .container {
-    margin: 1em 0.5em;
-  }
-
-  .form-imc,
-  .resultado,
-  .imc-resultado,
-  .classificacao {
+.container {
     width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
+    margin: 1em;
+}
 
-  .form-control {
-    width: 90%;
-  }
-
-  .homem {
+.form-imc,
+.imc-resultado,
+.resultado {
     width: 100%;
-  }
+}
 
-  .btn-imc {
+.form-control {
+    width: 80%;
+  
+}
+
+.img-homem-mulher {
+  width: 100px;
+}
+
+.btn-imc {
     margin-top: 1em;
-  }
+}
 
-  #btmulher,
-  #bthomem {
+#btmulher,
+#bthomem {
     width: 100%;
     margin: 2% 0;
-  }
-
-  .calcular {
-    margin: 8% 0 6% 5%;
-  }
 }
+
+.calcular {
+    margin: 8% 0 6% 5%;
+}
+
+footer {
+    width: 100%;
+}
+}
+
+
+
+
+
+
+
+
+
