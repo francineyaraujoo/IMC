@@ -47,11 +47,11 @@ body {
   }
   
   .img-homem-mulher {
-    width: 200px;
+    width: 150% !important;
   }
 
   .btn-imc {
-    margin-top: 1em;
+    margin-top: 0.5% !important;
   }
 
   #btmulher {
@@ -65,12 +65,14 @@ body {
   }
 
   .calcular {
-    margin: 22% 0 6% 10%;
-    color: #fff;
+    margin: 22% 0 6% 10% !important;
+    margin-top: 0.5% !important;
+    color: #fff !important;
   }
 
   .resultado {
     background-color: #D9D9D9;
+    padding: 3%;
     border-radius: 5px;
     width: 417px;
     height: 381px;
@@ -81,8 +83,13 @@ body {
     color: red;
   }
 
+  .teste {
+    color: red;
+  }
+
   .resultado p {
     margin-top:10px 0 10px 0;
+    font-weight: bold;
     padding: 2px;
   }
 
@@ -99,12 +106,15 @@ body {
     
   }
 
-  .imc-texto {
-    text-align: justify;
-    letter-spacing: 20%;
-    margin-top: 8%;
+  .table{
+    margin-top: 10% !important;
+    font-size: 12px !important;
   }
+  .table tr { padding: 0; height:0em; }
 
+  .medida {
+    text-align: justify;
+  }
 
   footer {
     background-color: #3E899A;
@@ -113,57 +123,290 @@ body {
     flex-shrink: 0;
   }
 
-
-/* Media query para tablets e telas menores */
-@media (min-width: 150px) and (max-width: 1280px) {
+  /* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
   .header {
-    padding: 1em;
-}
-
-.container {
     width: 100%;
-    margin: 1em;
+  }
+.container {
+  width: 100%;
+  margin: 1em;
 }
-
 .form-imc,
 .imc-resultado,
 .resultado {
-    width: 100%;
+  width: 100%;
+}
+.img-homem-mulher {
+  width: 30% !important;
+}
+#btmulher,
+#bthomem {
+  width: 100% !important;
+}
+.calcular {
+  width: 100%;
+  margin: 8% 0 6% 0% !important;
 }
 
 .form-control {
-    width: 80%;
-  
+  width: 80%;
 }
 
-.img-homem-mulher {
-  width: 100px;
-}
 
 .btn-imc {
-    margin-top: 1em;
+  margin-top: 0.5% !important;
+}
+
+
+.table {
+  margin-top: 15% !important;
+  font-size: 50% !important;
+  font-weight: bold;
+}
+
+.table tr {
+  padding: 0;
+  height: 0;
+}
+
+.medida {
+  text-align: justify;
+}
+
+footer {
+  width: 100%;
+}
+
+
+}
+  /* Small devices (landscape phones, 576px and up)*/
+  @media (min-width: 576px) and (max-width: 767.98px) {
+  .header {
+      width: 100%;
+    }
+  .container {
+    width: 100%;
+    margin: 1em;
+  }
+  .form-imc,
+  .imc-resultado,
+  .resultado {
+    width: 100%;
+  }
+  .img-homem-mulher {
+    width: 60% !important;
+  }
+  #btmulher,
+  #bthomem {
+    width: 100% !important;
+  }
+  .calcular {
+    width: 100%;
+    margin: 8% 0 6% 0% !important;
+  }
+  
+  .form-control {
+    width: 80%;
+  }
+  
+  .btn-imc {
+    margin-top: 0.5% !important;
+  }
+  
+  .table {
+    margin-top: 15% !important;
+    font-size: 9px !important;
+    font-weight: bold;
+  }
+  
+  .table tr {
+    padding: 0;
+    height: 0;
+  }
+
+  .medida {
+    text-align: justify;
+  }
+  
+  footer {
+    width: 100%;
+  }
+
+  }
+  
+  
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+.header {
+  width: 100%;
+  }
+.container {
+  width: 100%;
+  margin: 1em;
+}
+.form-imc,
+.imc-resultado,
+.resultado {
+  width: 100%;
+}
+.img-homem-mulher {
+  width: 100px !important;
 }
 
 #btmulher,
 #bthomem {
-    width: 100%;
-    margin: 2% 0;
+  width: 100% !important;
+}
+.calcular {
+  width: 100% !important;
+  margin: 8% 0 6% 0% !important;
 }
 
-.calcular {
-    margin: 8% 0 6% 5%;
+.form-control {
+  width: 80%;
+}
+
+
+.btn-imc {
+  margin-top: 0.5% !important;
+}
+
+
+.table {
+  margin-top: 30% !important;
+  font-size: 10px !important;
+}
+
+.table tr {
+  padding: 0;
+  height: 0;
+}
+
+.medida {
+  text-align: justify;
 }
 
 footer {
+  width: 100%;
+}
+
+}
+  
+  
+  /* Large devices (desktops, 992px and up)*/
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .header {
+      width: 100%;
+    }
+  .container {
     width: 100%;
-}
-}
+    margin: 1em;
+  }
+  .form-imc,
+  .imc-resultado,
+  .resultado {
+    width: 100%;
+  }
+  
+  #btmulher,
+  #bthomem {
+    width: 100% !important;
+  }
+  .calcular {
+    width: 100%;
+    margin: 8% 0 6% 0% !important;
+  }
 
+  .img-homem-mulher {
+    width: 150px !important;
+  }
+  
+  .form-control {
+    width: 80%;
+  }
+  
+  
+  .btn-imc {
+    margin-top: 2% !important;
+  }
+  
+  
+  .table {
+    margin-top: 10% !important;
+    font-size: 15px;
+  }
+  
+  .table tr {
+    padding: 0;
+    height: 0;
+  }
 
+  .medida {
+    text-align: justify;
+  }
+  
+  footer {
+    width: 100%;
+  }
 
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up)*/
+  @media (min-width: 1200px) {
+    .header {
+      width: 100%;
+    }
+  .container {
+    width: 100%;
+    margin: 1em;
+  }
+  .form-imc,
+  .imc-resultado,
+  .resultado {
+    width: 100%;
+  }
+  .img-homem-mulher {
+    width: 40% !important;
+  }
+  #btmulher,
+  #bthomem {
+    margin: 5% 0% 0% 0% !important;
+    width: 100%;
+  }
+  .calcular {
+    width: 100%;
+    margin: 8% 0 6% 0% !important;
+  }
+  
+  .form-control {
+    width: 80%;
+  }
+  
+  
+  .btn-imc {
+    margin-top: 2% !important;
+  }
+  
+  
+  .table {
+    margin-top: 15% !important;
+    font-size: 20px;
 
+  }
+  
+  .table tr {
+    padding: 0;
+    height: 0;
+  }
 
+  .medida {
+    text-align: justify;
+  }
+  
+  footer {
+    width: 100%;
+  }
 
-
-
-
+  }
+  
