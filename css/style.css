@@ -12,6 +12,13 @@ body {
     text-align: center;
     color: #fff;
 }
+
+div > h2 {
+  margin: 2%;
+  padding: 1%;
+  text-align: center;
+  color: #3E899A;
+}
   
   /* Estilize o container principal */
   .container { 
