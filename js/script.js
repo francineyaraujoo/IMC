@@ -1,15 +1,15 @@
-document.getElementById("btmulher").addEventListener("click", function () {
-    document.getElementById("header").style.backgroundColor = "rgb(216, 153, 184)";
-    document.getElementById("footer").style.backgroundColor = "rgb(216, 153, 184)";
-    document.getElementById("botao").style.backgroundColor = "rgb(216, 153, 184)";
-    document.getElementById("resultado").style.backgroundColor = "rgb(216, 153, 184)";
+    document.getElementById("btmulher").addEventListener("click", function () {
+    document.getElementById("header").style.backgroundColor = "rgb(225, 150, 175)";
+    document.getElementById("footer").style.backgroundColor = "rgb(225, 150, 175)";
+    document.getElementById("botao").style.backgroundColor = "rgb(225, 150, 175)";
+    document.getElementById("resultado").style.backgroundColor = "rgb(225, 150, 175)";
     document.getElementById("mulher"). src = "img/mulher.png";
   }, false);
   document.getElementById("bthomem").addEventListener("click", function () {
-    document.getElementById("header").style.backgroundColor = "rgb(149, 191, 233)";
-    document.getElementById("footer").style.backgroundColor = "rgb(149, 191, 233)";
-    document.getElementById("botao").style.backgroundColor = "rgb(149, 191, 233)";
-    document.getElementById("resultado").style.backgroundColor = "rgb(149, 191, 233)";
+    document.getElementById("header").style.backgroundColor = "rgb(100, 143, 243)";
+    document.getElementById("footer").style.backgroundColor = "rgb(100, 143, 243)";
+    document.getElementById("botao").style.backgroundColor = "rgb(100, 143, 243)";
+    document.getElementById("resultado").style.backgroundColor = "rgb(100, 143, 243)";
     document.getElementById("mulher"). src = "img/homem.png";
   }, false);
 
@@ -26,37 +26,47 @@ document.getElementById("btmulher").addEventListener("click", function () {
     document.getElementById("r5i").style.backgroundColor = "white";
     document.getElementById("r6p").style.backgroundColor = "white";
     document.getElementById("r6i").style.backgroundColor = "white";
+
+    var nome = (document.getElementById("nome").value);
     var peso = Number(document.getElementById("peso").value);
     var altura = Number(document.getElementById("altura").value);
     var imc = peso / (altura * altura);
     var imcElement = document.getElementById("imc");
 
-
     if (imc) {
       imc = imc.toFixed(2);
 
       if (imc < 18.5) {
-        imcElement.innerHTML =  "Seu IMC: <br> Abaixo do peso " + imc;
+        imcElement.innerHTML = nome +"," + " Seu imc é: "+ imc + " Você esta abaixo do peso!";
         document.getElementById("r1p").style.backgroundColor = "rgb(149, 191, 233)";
         document.getElementById("r1i").style.backgroundColor = "rgb(149, 191, 233)";
+        
       } else if (imc >= 18.5 && imc < 24.9) {
-        imcElement.innerHTML = "Seu IMC: <br> Peso normal " + imc;
+        imcElement.innerHTML = nome +"," + " Seu imc é:  "+ imc + "<br> Peso normal," + " Parabéns!";
         document.getElementById("r2p").style.backgroundColor = "rgb(216, 153, 184)";
         document.getElementById("r2i").style.backgroundColor = "rgb(216, 153, 184)";
+
+
       } else if (imc >= 25.0 && imc < 29.9) {
-        imcElement.innerHTML = "Seu IMC: <br> Acima do peso " + imc;
+        imcElement.innerHTML = nome +"," + " Seu imc é:  "+ imc + "<br> Acima do peso!";
         document.getElementById("r3p").style.backgroundColor = "rgb(149, 191, 233)";
         document.getElementById("r3i").style.backgroundColor = "rgb(149, 191, 233)";
+
+
       } else if (imc >= 30.0 && imc < 34.9) {
-        imcElement.innerHTML = "Seu IMC: <br> Obesidade Grau I " + imc;
+        imcElement.innerHTML = nome +"," + " Seu imc é:  "+ imc + "<br> Obesidade Grau I!";
         document.getElementById("r4p").style.backgroundColor = "rgb(149, 191, 233)";
         document.getElementById("r4i").style.backgroundColor = "rgb(149, 191, 233)";
+
+
       } else if  (imc >= 35.0 && imc < 39.9) {
-        imcElement.innerHTML = "Seu IMC: <br> Obesidade Grau  II " + imc;
+        imcElement.innerHTML = nome +"," + " Seu imc é:  "+ imc + "<br> Obesidade Grau  II!";
         document.getElementById("r5p").style.backgroundColor = "rgb(216, 153, 184)";
         document.getElementById("r5i").style.backgroundColor = "rgb(216, 153, 184)";
+
+
       } else {
-        imcElement.innerHTML = "Seu IMC: <br> Obesidade Grau III " + imc;
+        imcElement.innerHTML = nome +"," + " Seu imc é:  "+ imc + "<br> Obesidade Grau III!";
         document.getElementById("r6p").style.backgroundColor = "rgb(149, 191, 233)";
         document.getElementById("r6i").style.backgroundColor = "rgb(149, 191, 233)";
       }
