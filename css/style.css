@@ -124,7 +124,7 @@ body {
 
   footer {
     background-color: #3E899A;
-    height: 73px;
+    padding: 2%;
     flex-shrink: 0;
   }
 
